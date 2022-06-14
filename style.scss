@@ -1,0 +1,179 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Radio Canada', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.main h1{
+   display: flex;
+   justify-content: center;
+ align-items: center;
+
+}
+
+.navbar{
+
+    display:flex;
+    justify-content:center;
+    padding: 2em;
+    
+}
+.brand{
+    margin-top: -7px;
+}
+.menu li{
+    list-style: none;
+    padding: 0.5em 0;
+    flex: 1 0 100%;
+}
+
+.videoindex{
+    width: 500px;
+    height: 500px;
+}
+
+@media (min-width: 768px){
+    .menu li{
+        flex: 1 1 auto;
+    }
+}
+
+.menu{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.menu a{
+color: white;
+text-decoration: none;
+padding: 10px 20px;
+}
+.menu a:hover {
+    background-color: white;
+    color: black;
+    transition: ease-in .5s;
+}
+
+
+
+.videoindex{
+     width: 100%;
+     min-height: 500px;
+     max-width: 1000px;
+}
+
+.barra{
+    background-color: black;
+    color: white;
+    
+}
+
+
+
+.titulo{
+    margin-top: -7px;
+    background-color: #000000;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+    background-image: url(../img/_IFO6973-2.jpg);
+    background-size: cover;
+}
+
+.footer {
+    grid-area: footer;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121212;
+    color: white;
+}
+
+ .copyright-container{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+     padding: 1em 0;
+ }
+ .copyright{
+     font-size: 12px;
+     opacity: 0.7;
+     font-weight: 400;
+     padding: 10px 0;
+ }
+
+ .footer-container {
+    text-align: center;
+    padding: 1em 0;
+ }
+
+ .footer h3{
+     margin-bottom: 1.2rem;
+     font-size: calc(1vw + 20px);
+ }
+
+.grupo {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 4em;
+}
+
+.social-networks a {
+    display: inline-flex;
+    color: #ffffff;
+    height: 48px;
+    width: 48px;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 6px;
+    transition: transform 0.4s;
+}
+
+.social-networks a:hover {
+    transform: scale(1.3);
+}
+
+.social-networks a.facebook {
+    background-color: #3c70a4;
+}
+
+.social-networks a.twitter {
+    background-color: #5bd1d7;
+}
+
+
+.social-networks a.youtube {
+    background-color: #c72c41;
+}
+
+.social-networks a.instagram {
+    background-color: #bb7171;
+}
